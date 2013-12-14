@@ -111,10 +111,13 @@
 \contentsline {section}{\numberline {4.4}Back-end technologies}{68}
 \contentsline {subsection}{\numberline {4.4.1}AngularJS}{68}
 \contentsline {subsubsection}{application 's structure}{68}
-\contentsline {subsubsection}{MVC}{70}
-\contentsline {subsubsection}{Data Binding}{70}
+\contentsline {subsubsection}{Data Binding}{69}
 \contentsline {subsubsection}{Changing the DOM with Directives}{70}
-\contentsline {subsection}{\numberline {4.4.2}GoJS}{71}
+\contentsline {subsubsection}{MVC}{71}
+\contentsline {subsection}{\numberline {4.4.2}GoJS}{72}
+\contentsline {subsubsection}{Define various shapes}{72}
+\contentsline {subsubsection}{Interaction diagram}{72}
+\contentsline {subsubsection}{Other features}{72}
 \contentsline {chapter}{\numberline {5}DISCUSSION \& CONCLUSION}{73}
 \contentsline {section}{\numberline {5.1}Discussions of key technologies and concepts}{74}
 \contentsline {subsection}{\numberline {5.1.1}Front-end}{74}
@@ -123,8 +126,8 @@
 \contentsline {subsubsection}{GoJs}{74}
 \contentsline {subsection}{\numberline {5.1.3}Integration into one single RIA}{75}
 \contentsline {subsection}{\numberline {5.1.4}Software engineering concepts in RIA development}{75}
-\contentsline {section}{\numberline {5.2}Discussion of demo application}{75}
-\contentsline {subsection}{\numberline {5.2.1}Features and benefits}{75}
-\contentsline {subsection}{\numberline {5.2.2}Comparisons with other online diagram editors}{75}
+\contentsline {section}{\numberline {5.2}Discussion of demo application}{76}
+\contentsline {subsection}{\numberline {5.2.1}Features and benefits}{76}
+\contentsline {subsection}{\numberline {5.2.2}Comparisons with other online diagram editors}{76}
 \contentsline {subsection}{\numberline {5.2.3}Drawbacks}{76}
 \contentsline {section}{\numberline {5.3}Future works and Conclusions}{76}

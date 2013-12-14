@@ -248,7 +248,7 @@ as runtime environment.
 			\end{itemize}
 			\begin{center}
 			\includegraphics[scale=0.6]{javamvc.png}
-			Figure that created by JavaScriptMVC
+			Figure created by JavaScriptMVC
 			\end{center}
 		\subsubsection{JQuery}
 			\begin{itemize}
@@ -406,14 +406,14 @@ as runtime environment.
 			\begin{figure}
 				\begin{center}
 				\includegraphics[scale=0.5]{sencha.png}
-				\caption{An example that created by sencha}
+				\caption{An example created by sencha}
 				\end{center}
 			\end{figure}
 			
 			\begin{figure}
 				\begin{center}
 				\includegraphics[scale=0.5]{sencha1.png}
-				\caption{Another example that created by sencha}
+				\caption{Another example created by sencha}
 				\end{center}
 			\end{figure}					
 			
@@ -435,7 +435,7 @@ as runtime environment.
 			\begin{figure}
 				\begin{center}
 				\includegraphics[scale=0.6]{qooxdoo.png}
-				\caption{An example that created by qooxdoo}
+				\caption{An example created by qooxdoo}
 				\end{center}
 			\end{figure}
 
@@ -462,7 +462,7 @@ as runtime environment.
 			\begin{figure}
 				\begin{center}
 				\includegraphics[scale=0.5]{jqueryui.png}
-				\caption{An example that created by jqueryui}
+				\caption{An example created by jqueryui}
 				\end{center}
 			\end{figure}
 
@@ -486,7 +486,7 @@ as runtime environment.
 			\begin{figure}
 				\begin{center}
 				\includegraphics[scale=0.6]{YUI.png}
-				\caption{An example that created by YUI}
+				\caption{An example created by YUI}
 				\end{center}			
 			\end{figure}
 
@@ -509,7 +509,7 @@ as runtime environment.
 			\begin{figure}
 				\begin{center}
 				\includegraphics[scale=0.9]{backbone.png}
-				\caption{An example that created by backbone}
+				\caption{An example created by backbone}
 				\end{center}
 			\end{figure}
 
@@ -533,7 +533,7 @@ as runtime environment.
 			\begin{figure}
 				\begin{center}
 				\includegraphics[scale=0.7]{dhtmlx.png}
-				\caption{An example that created by DHTMLX}
+				\caption{An example created by DHTMLX}
 				\end{center}			
 			\end{figure}
 
@@ -845,7 +845,7 @@ public SomeClass (Object myObject) {
 The first two option are quite bad. Hardcoding the \emph{objectname} does not really solve the problem as you cannot easily change your mind later without changing the that class again. Using a constant \emph{GLOBAL\_OBJECT} is also a bad idea as the \emph{SomeClass} now depends on a constant to be set.
 \\
 
-But there is yet another problem that cannot be solved easily: How can I change Object class? For instance, to replace it with a mock object to ease testing. This makes the class difficult to modify the dependencies. This is especially problematic in tests, again ,where it is often desirable to provide mock dependencies for test isolation[].
+But there is yet another problem that cannot be solved easily: How can I change Object class? For instance, to replace it with a mock object to ease testing. This makes the class difficult to modify the dependencies. This is especially problematic in tests, again ,where it is often desirable to provide mock dependencies for test isolation\cite{angdocDI}.
 \\
 
 The third option , which simply passed the dependencies into where it is needed , is the most viable, since it removes the responsibility of locating the dependency from the component. The dependency is simply handed to the component.That's Dependency Injection. Nothing more! Using the SomeClass class is now a bit more 
@@ -861,7 +861,7 @@ Basically, DI can be simply explained as follow, instead of having the objects c
 This is just for your first sight of what will happen to the code and how it looks like when we use DI. I’ll explain why we are doing this and its benefits later. First, let’s see what is the definition of this design pattern.
 
 			\subsubsection{Definition}
-			Dependency injection (DI) is a software design pattern that allows removing hard-coded dependencies and making it possible to change them, whether at run-time or compile-time[1]
+			Dependency injection (DI) is a software design pattern that allows removing hard-coded dependencies and making it possible to change them, whether at run-time or compile-time\cite{wikiDI}
 
 Dependency injection involves at least three elements:
 \begin{itemize}
@@ -1032,7 +1032,7 @@ Separation of Concerns (SoC)  is a standard practice of dividing up major compon
 			\end{verbatim}
 		\subsection{Inversion of Control}
 			\subsubsection{Introduction}
-			Inversion of control (IoC) is not a new term in computer sciences anymore, although it’s still a pretty new topic in software development. This term was first brought by Martin Fowler in 1988[4] and it’s sometime referred as the Hollywood Principle [4] which states “Don't call us, we'll call you". I found this more obscure and hard to understanding if i throw a definition in the first stage when someone just tries to get what is it. Therefore, there will an example and explanation before we ‘re going to the definition of IoC.
+			Inversion of control (IoC) is not a new term in computer sciences anymore, although it’s still a pretty new topic in software development. This term was first brought by Martin Fowler in 1988\cite{wikiIC} and it’s sometime referred as the Hollywood Principle \cite{wikiIC} which states “Don't call us, we'll call you". I found this more obscure and hard to understanding if i throw a definition in the first stage when someone just tries to get what is it. Therefore, there will an example and explanation before we ‘re going to the definition of IoC.
 \\			
 
 Let’s see this example, say my app has a diagram editor and to implement this diagram editor i use the gojs library ‘s APIs. In this case, i hard code the class of object that i use to this App class and handle everything. This is what the could look likes when we work in the procedure process.
@@ -1140,7 +1140,7 @@ model and view components. The way that Angular implements data-binding lets you
 			\end{figure}
 			\end{itemize}
 			\subsubsection{MVC}
-			MVC application structure was introduced in the 1970s as part of Smalltalk[]. From its start in Smalltalk, MVC became popular in nearly every desktop development environment where user interfaces were involved. Whether you were using C++, Java, or Objective-C, there was some flavor of MVC available. Until recently, however, MVC was all but foreign to web development.
+			MVC application structure was introduced in the 1970s as part of Smalltalk\cite{AngBook}. From its start in Smalltalk, MVC became popular in nearly every desktop development environment where user interfaces were involved. Whether you were using C++, Java, or Objective-C, there was some flavor of MVC available. Until recently, however, MVC was all but foreign to web development.
 \\
 
 The core idea behind MVC is that you have clear separation in your code between managing its data (model), the application logic (controller), and presenting the data to the user (view). Code for AngularJS applications is always organized into models, views, controllers, and (optionally) services.
@@ -1186,10 +1186,10 @@ Using the \$provide service:
 
 
 			\subsubsection{Unit Testing}
-			With the rapid development of software industry, more and more huge applications are produced. Going along with that is a problem how to know the quality of the software products or services before publishing them? That is where software testing taking places. In fact testing is an investigation including several processes whose purpose is to provide an objective, independent view of the software to allow the business to appreciate and understand the risks of software implementation[].
+			With the rapid development of software industry, more and more huge applications are produced. Going along with that is a problem how to know the quality of the software products or services before publishing them? That is where software testing taking places. In fact testing is an investigation including several processes whose purpose is to provide an objective, independent view of the software to allow the business to appreciate and understand the risks of software implementation\cite{test}.
 \\
 
-Unit testing, also known as component testing, refers to tests that verify the functionality of a specific section of code, usually at the function level. In an object-oriented environment, this is usually at the class level, and the minimal unit tests include the constructors and destructors[2].  Unit testing is usually performed by the developers working on the code themselves to verify the functions meet their design and behave as intended. There may be multiple tests on one function in order to catch all the cases. Unit testing alone cannot verify the functionality of a piece of software [3] , but it is known to be most effective means to test individual software components
+Unit testing, also known as component testing, refers to tests that verify the functionality of a specific section of code, usually at the function level. In an object-oriented environment, this is usually at the class level, and the minimal unit tests include the constructors and destructors\cite{Binder}.  Unit testing is usually performed by the developers working on the code themselves to verify the functions meet their design and behave as intended. There may be multiple tests on one function in order to catch all the cases. Unit testing alone cannot verify the functionality of a piece of software \cite{wikiut} , but it is known to be most effective means to test individual software components
 
 	\section{GoJS}
 		\subsection{Overview}
@@ -1324,7 +1324,8 @@ Unit testing, also known as component testing, refers to tests that verify the f
 			\end{center}
 		\end{figure}
 
-			\subsubsection{MVC}
+			
+			
 			\subsubsection{Data Binding}
 			Before AJAX single-page apps were common, platforms like Rails, PHP, or JSP helped us create the user interface (UI) by merging strings of HTML with data before sending it to the users to display it. Here with data binding i just declare which parts of the UI map to which JavaScript properties and have them sync automatically. It works great with MVC to eliminate code when writing view and model. Most of the work in moving data from one to the other just happens automatically. From now on the view will be automatically updated when the model changed . how great is this?
 			\subsubsection{Changing the DOM with Directives}
@@ -1346,6 +1347,7 @@ Unit testing, also known as component testing, refers to tests that verify the f
 			\begin{verbatim}
 			<div dropdown-menu></div>
 			\end{verbatim}
+			\subsubsection{MVC}
 				Angular supports the Model View Controller style of application design. Though it has a lot of flexibility in designing an Angular application, a brief description of what MVC in figure ~\ref{MVC} can bring into this :
 				\begin{itemize}
 \item A model containing data that represents the current state of the application.
@@ -1360,8 +1362,13 @@ Unit testing, also known as component testing, refers to tests that verify the f
 			\end{center}
 		\end{figure}
 		
-
 		\subsection{GoJS}
+			\subsubsection{Define various shapes}
+				Apparently the ability of Gojs that support users to define various shapes for their diagrams is one of the most important features of Gojs. This library provide more than 70 samples of various type of shapes, it also give the users the ability to customize their own shapes and create new ones. In this application, more than 250 types of shapes have been created and this has brought the diversity into the app.
+			\subsubsection{Interaction diagram}
+				A canvas where users can interact with the diagram they have just created obviously is the main part of this application. This is the main play ground for the users work with the most in this app. Therefore, many interactions have been added thanks to Gojs. The more users can interact with the diagram the more comfortable they feel and that is very important. Some very basic interactions can be listed are selecting, zooming, rotating, commenting, moving, grouping, copying, pasting, Deleting, etc. Besides some more advance features help align, undo, redo, change coordinate or size of every node in the canvas. Moreover, connecting nodes together, node/link/text manipulation are also supported.
+			\subsubsection{Other features}
+				Beside all the basic interaction with the main canvas, Gojs also support the user to build palettes. The users can find the suitable templates and use drag-and-drop to bring them into the canvas. An overview of the canvas is easily built with Gojs. One more interesting ability of Gojs is data-binding, this make the process of defining shapes much more dynamic. Event handlers are also great feature. there are various of event such as mouse drop, mouse move, object dropped, clicking, double-clicked, etc. These events are the main reasons behind the comfortability of the canvas. Layout and arrangement support is very nice. Finally, Saving and loading with JSON or import/export diagrams into both JSON or pictures are easy with Gojs.
 		
 \chapter{DISCUSSION \& CONCLUSION}
 	\textsl{In this chapter, discussion about all the explored technologies and evaluation about the application has just been built using and integrating such technologies. Besides, i will discuss further about the future work to improve performance as well as adding more features and improve code organization}
@@ -1369,31 +1376,33 @@ Unit testing, also known as component testing, refers to tests that verify the f
 	
 	\section{Discussions of key technologies and concepts}
 		\subsection{Front-end}
-			This application uses some libraries that support and provide very beautiful and delicate widget such as accordion and splitter of JqueryUI, font, theme, color, menu of Twitter Bootstrap, Sidebar and modal of semantic-UI. They have very specific advantages that each library provide a nice set of Widgets and easily to integrate with other libraries. The combination of all these libraries gives the application a very delicate and nice look. Without such widgets, create an nice application takes a lot more times and effort and may cause errors.
+			This application uses some libraries that support and provide very beautiful and delicate widget such as accordion and splitter of JqueryUI; font, theme, color, menu of Twitter Bootstrap; sidebar and modal of semantic-UI. They have very specific advantages that each library provide a nice set of Widgets and easily to integrate with other libraries. The combination of all these libraries gives the application a very delicate and nice look. Without such widgets, creating a nice application takes a lot more times and effort and may cause errors.
 		
 		\subsection{Back-end}
 			\subsubsection{AngularJS}
-				AngularJS is an open-source JavaScript framework, maintained by Google, that assists with running single-page applications. Its goal is to augment browser-based applications with model–view–controller (MVC) capability, in an effort to make both development and testing easier. It give the RIA a nice structure with using many software enginering concepts like dependencies injection ,separation of concern and Inversion of control. 
-				Utilizing such advantages, this application use Angular.js to structure and support the development.However, i cannot utilize all the advantages of angular like testing and some other services.
+				AngularJS is an open-source JavaScript framework, maintained by Google, that assists with running single-page applications. Its goal is to augment browser-based applications with model–view–controller (MVC) capability, in an effort to make both development and testing easier. It give the RIA a nice structure with using many software engineering concepts like dependencies injection ,separation of concern and Inversion of control. 
+				Utilizing such advantages, this application use AngularJs to structure and support the development. although not  all the advantages of angular like testing and some other services are utilized, the benefits Angular has brought is remarkable. However, the documents as well as samples of using this framework is quite vague and not easy to understand , especially with newbie. Therefore, it took much time to comprehend and apply all the definitions and techniques into the project.
  			\subsubsection{GoJs}
- 				GoJS is a feature-rich JavaScript library for implementing interactive diagrams across modern browsers and platforms. GoJS makes constructing diagrams of complex Nodes, Links, and Groups easy with customizable templates and layouts. GoJS offers many advanced features for user interactivity such as drag-and-drop, copy-and-paste, transactional state and undo management, palettes, overviews, data-bound models, event handlers, and an extensible tool system for custom operations.
- 				However, this library lack support of UML component and sometimes there are still several errors happen.
+ 				GoJS is a feature-rich JavaScript library for implementing interactive diagrams across modern browsers and platforms. GoJS makes constructing diagrams of complex Nodes, Links, and Groups easy with customizable templates and layouts. GoJS offers many advanced features for user interactivity such as drag-and-drop, copy-and-paste, transactional state and undo management, palettes, overviews, data-bound models, event handlers, and an extensible tool system for custom operations. Supporting nearly all necessary features of a diagramming tool, it helps save a lot of time from building anything from scratch with canvas tag of html5.However, this library lack support of UML component and sometimes there are still several errors happen.
+ 				Using this library a web-based diagramming tool is built successfully with many features that help the users with the designing process. The users can drag-and-drop shapes from palettes into canvas and interact with them. Although, this tool provide more than 250 templates, most of them are basich shapes and not many UML-type diagrams are supported.
 		
 		\subsection{Integration into one single RIA}
-			It is such a nice work of integrating many frameworks and libraries together into one single RIA. This means this RIA is a combination of all the advantages of all the technologies which has been used. However, before the integration , a serious survey need to be conducted to choose such libraries that work together.
+			It is such a nice work of integrating many frameworks and libraries together into one single RIA. This means this RIA is a combination of all the advantages of all the technologies which has been used. However, before the integration , a serious survey need to be conducted to choose such libraries that work together.There are a lot of try-and-fail processes to apply and integrating such different libraries into one single web app. 
 		
 		\subsection{Software engineering concepts in RIA development}
 			Two important software engineering concepts used in this RIA is Dependencies injection(DI) and Separation of concern. DI help the Reduction of boilerplate code – which is included in many places without any alteration and the programmers have to write more code to do minimum jobs in the application objects since all work to initialize or set up dependencies is handled by a provider component. Separation of Concerns (SoC) is a standard practice of dividing up major components of an application and segregating them from the rest of the application. There are many different ways to accomplish SoC and one of them is to utilize the magic of Dependency Injection (DI). SoC via DI is the practice of splitting up the application into components, and then resolving any dependencies those components have on other components through the use of injection.
 			
 	\section{Discussion of demo application}
 		\subsection{Features and benefits}
-			This RIA support design interactive diagram and collaboration with others.
+			This app supports design interactive diagram and collaboration with others. More than 250 shapes are provided and divided into categories with the search support. The uses and search for their shapes by text or dragging directly into canvas and interact with them. 
 		\subsection{Comparisons with other online diagram editors}
-			There are some other diagram tool online such as draw.io, creately.com, griffy.com built by some big companies with stunning features. This application somehow can also provide similar features.
+			There are some other diagram tool online such as draw.io, creately.com, griffy.com built by some big companies with stunning features. This application somehow can also provide similar features. These tools are built with groups of professional people with strong software engineering skills. Therefore, the features are perfect and the number of available shapes are much more than in this app. 
 		\subsection{Drawbacks}
-			Due to lack of experience and this is a one-person thesis so the scope is not big and the features cannot be compared with other tools built by large companies.
+			Due to lack of experience and this is a one-person thesis so the scope is not big and the features cannot be compared with other tools built by large companies. Not many available shapes and diagram types are provided. Since all the work from surveying , choosing frameworks and libraries, developing and designing are done by one person, so there may some defects and errors or the design is not very good but clean and delicate and acceptable. 
 	\section{Future works and Conclusions}
-		I have explore and apply many technology into an RIA development. I also present in-details about each technologies as well as the feature of this application. In the future, this application need to improve more about features as well as how to organize the function.
+		This thesis is all about the exploration of RIA technologies and using them for the development of a web-based diagramming tools that help design diagrams online and collaborations. Several frameworks and libraries are surveyed and then some are chosen to be explored and applied into the development. I have explore and apply many technologies into an RIA development. I also present in-details about each technologies as well as the feature of this application. AngularJs is the chosen framework which help building SPA and introduced many stunning features. Besides, Gojs is the graph library with many support for building interactive diagram. Some more front-end libraries help to design a beautiful look are Twitter bootstrap, Angular bootstrap, JqueryUI, SemanticUI. The database is using Mongolab - a cloud service for storage based on Mongodb.
+		  
+		However, with the limited time and the scope is for one person, the app is not perfect and need improvements. In the future, this application may have more features, samples, supporting more diagram types and improve the code organization.
 
 
 \begin{thebibliography}{99}
@@ -1426,6 +1435,15 @@ pdf, 1979.
 \bibitem{TM11}Antero Taivalsaari and Tommi Mikkonen. The Web as an Application Platform: The Saga Continues. In EUROMICRO-SEAA, pages 170–174, 2011.
 
 \bibitem{Gar05} Jesse James Garrett. AJAX: A New Approach to Web Applications. http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications, 2005.
+\bibitem{wikiDI} http://en.wikipedia.org/wiki/Dependency\_injection
+\bibitem{angdocDI} http://docs.angularjs.org/guide/di
+\bibitem{AngBook} AngularJS by Brad Green and Shyam Seshadri
+Copyright 2013 Brad Green and Shyam Seshadri
+\bibitem {test} http://en.wikipedia.org/wiki/Software\_testing
+\bibitem{binder} Binder, Robert V. (1999). Testing Object-Oriented Systems: Objects, Patterns, and Tools. Addison-Wesley Professional. p. 45. ISBN 0-201-80938-9.
+\bibitem{wikiut} http://en.wikipedia.org/wiki/Unit\_testing
+\bibitem{wikiIC} http://en.wikipedia.org/wiki/Inversion\_of\_control
+
 \end{thebibliography}
 
 
